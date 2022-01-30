@@ -110,9 +110,9 @@ Include dependency graph for longest_substr_no_repeating.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac4deea10aa96751a9fcb7fb6dd37269b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s)</td></tr>
-<tr class="memdesc:ac4deea10aa96751a9fcb7fb6dd37269b"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert  <a href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">More...</a><br /></td></tr>
-<tr class="separator:ac4deea10aa96751a9fcb7fb6dd37269b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af7db448220376782173c8a02a9545a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> s)</td></tr>
+<tr class="memdesc:a6af7db448220376782173c8a02a9545a"><td class="mdescLeft">&#160;</td><td class="mdescRight">for assert  <a href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">More...</a><br /></td></tr>
+<tr class="separator:a6af7db448220376782173c8a02a9545a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../d4/d11/longest__substr__no__repeating_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">More...</a><br /></td></tr>
 <tr class="separator:aa8dca7b867074164d5f45b0f3851269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,14 +124,14 @@ Functions</h2></td></tr>
 <div class="textblock"><p >Sliding window with an array to find the longest substring with no repeating characters. </p>
 <p >Given a string, find the longest substring with no repeating any characters. The time complexity is O(n) due to the sliding window method and the space complexity is O(1) because the array is fixed size of 256. </p><dl class="section author"><dt>Author</dt><dd><a href="https://github.com/tazyqui" target="_blank">Tan Nguyen</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac4deea10aa96751a9fcb7fb6dd37269b" name="ac4deea10aa96751a9fcb7fb6dd37269b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4deea10aa96751a9fcb7fb6dd37269b">&#9670;&nbsp;</a></span>lengthOfLongestSubstring()</h2>
+<a id="a6af7db448220376782173c8a02a9545a" name="a6af7db448220376782173c8a02a9545a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af7db448220376782173c8a02a9545a">&#9670;&nbsp;</a></span>lengthOfLongestSubstring()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int lengthOfLongestSubstring </td>
+          <td class="memname">uint8_t lengthOfLongestSubstring </td>
           <td>(</td>
           <td class="paramtype"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -148,7 +148,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return an integer that indicates the size of the longest substring with no repeating characters. </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                          {   </div>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                              {   </div>
 <div class="line"><span class="lineno">   22</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d4/d18/composite__simpson__rule_8cpp.html#a6d8df83a6f26ce24a75d3b358b7f5b8a">l</a> = 0, r = 0, res = 0; <span class="comment">// initialize left pointer, right pointer, and result</span></div>
 <div class="line"><span class="lineno">   23</span>    <span class="keywordtype">int</span> arr[256] = {0}; <span class="comment">// array to keep track of the quantity of each characters by using char as indices</span></div>
 <div class="line"><span class="lineno">   24</span> </div>
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d11/longest__substr__no__repeating_8cpp_ac4deea10aa96751a9fcb7fb6dd37269b_cgraph.svg" width="354" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d11/longest__substr__no__repeating_8cpp_a6af7db448220376782173c8a02a9545a_cgraph.svg" width="354" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -262,14 +262,14 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>                   {</div>
 <div class="line"><span class="lineno">   52</span>     <span class="comment">/* descriptions of the following test */</span></div>
-<div class="line"><span class="lineno">   53</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;abcabcbb&quot;</span>) == 3); <span class="comment">// this ensures that the algorithm works as expected</span></div>
-<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;aaaaaaaaaaa&quot;</span>) == 1); <span class="comment">//this ensures that the algorithm works for a string with all duplicates</span></div>
-<div class="line"><span class="lineno">   55</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;&quot;</span>) == 0); <span class="comment">//this ensures the algorithm works for an empty string</span></div>
-<div class="line"><span class="lineno">   56</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>) == 26); <span class="comment">//checks for longer strings</span></div>
-<div class="line"><span class="lineno">   57</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;!@1$&quot;</span>) == 4); <span class="comment">//check that non alphabetic character works</span></div>
+<div class="line"><span class="lineno">   53</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;abcabcbb&quot;</span>) == 3); <span class="comment">// this ensures that the algorithm works as expected</span></div>
+<div class="line"><span class="lineno">   54</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;aaaaaaaaaaa&quot;</span>) == 1); <span class="comment">//this ensures that the algorithm works for a string with all duplicates</span></div>
+<div class="line"><span class="lineno">   55</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;&quot;</span>) == 0); <span class="comment">//this ensures the algorithm works for an empty string</span></div>
+<div class="line"><span class="lineno">   56</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>) == 26); <span class="comment">//checks for longer strings</span></div>
+<div class="line"><span class="lineno">   57</span>    assert(<a class="code hl_function" href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a>(<span class="stringliteral">&quot;!@1$&quot;</span>) == 4); <span class="comment">//check that non alphabetic character works</span></div>
 <div class="line"><span class="lineno">   58</span>    <span class="comment">// can have multiple checks</span></div>
 <div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="alongest__substr__no__repeating_8cpp_html_ac4deea10aa96751a9fcb7fb6dd37269b"><div class="ttname"><a href="../../d4/d11/longest__substr__no__repeating_8cpp.html#ac4deea10aa96751a9fcb7fb6dd37269b">lengthOfLongestSubstring</a></div><div class="ttdeci">int lengthOfLongestSubstring(std::string s)</div><div class="ttdoc">for assert</div><div class="ttdef"><b>Definition:</b> longest_substr_no_repeating.cpp:21</div></div>
+<div class="ttc" id="alongest__substr__no__repeating_8cpp_html_a6af7db448220376782173c8a02a9545a"><div class="ttname"><a href="../../d4/d11/longest__substr__no__repeating_8cpp.html#a6af7db448220376782173c8a02a9545a">lengthOfLongestSubstring</a></div><div class="ttdeci">uint8_t lengthOfLongestSubstring(std::string s)</div><div class="ttdoc">for assert</div><div class="ttdef"><b>Definition:</b> longest_substr_no_repeating.cpp:21</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
